@@ -1,0 +1,15 @@
+{%extends 'modelo_base.html'%}
+{% block conteudo %}
+<p>Obrigado pelo seu pedido!</p>
+<p>Sua pizza com:</p>
+<p>{{massa}}<br>
+{{molho}}<br>
+{{ingrediente1}}<br>
+{{ingrediente2}}<br>
+{{ingrediente3}}<br>
+{{ingrediente4}}<br>
+{{borda}}<br></p>
+<p>Será entregue no endereço: {{endereco}} em aproximadamente 40 minutos!</p>
+
+<button  class="botao-voltar" onclick="window.location.href='/'">Voltar ao Início</button>
+{% endblock %}

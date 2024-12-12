@@ -1,0 +1,154 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.alinhar_inicio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.botao_inicio, button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulários */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 14px;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Páginas de resultados */
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de confirmação */
+p {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+p:nth-child(2) {
+    font-weight: bold;
+}
+
+p br {
+    margin: 5px 0;
+}
+
+
+/* Botão "Voltar ao Início" */
+.botao-voltar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #0056b3;
+}

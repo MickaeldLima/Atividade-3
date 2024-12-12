@@ -1,0 +1,59 @@
+{%extends 'modelo_base.html'%}
+{% block conteudo %}
+<form action="/confirmacao" method="POST">
+
+    <label for="">Tipo de massa: </label>
+    <select name="massa" id="">
+        <option value="Massa normal">Massa normal</option>
+        <option value="Massa com queijo">Massa com queijo</option>
+        <option value="Massa com carvão">Massa com carvão</option>
+    </select><br>
+
+    <label for="">Molho: </label>
+    <select name="molho" id="">
+        <option value="Molho de tomate">Molho de tomate</option>
+        <option value="Molho branco">Molho branco</option>
+        <option value="Sem molho">Sem molho</option>
+    </select><br>
+
+    <label for="">Ingrediente 1: </label>
+    <select name="ingrediente1" id="">
+        <option value="Queijo mussarela">Queijo mussarela</option>
+        <option value="Queijo prado">Queijo prado</option>
+        <option value="Queijo cheddar">Queijo cheddar</option>
+    </select><br>
+
+    <label for="">Ingrediente 2: </label>
+    <select name="ingrediente2" id="">
+        <option value="Calabresa">Calabresa</option>
+        <option value="Peperoni">Peperoni</option>
+        <option value="Lombinho Suíno">Lombinho Suíno</option>
+    </select><br>
+
+    <label for="">Ingrediente 3: </label>
+    <select name="ingrediente3" id="">
+        <option value="Catupiry">Catupiry</option>
+        <option value="Requeijão">Requeijão</option>
+        <option value="Ricota">Ricota</option>
+    </select><br>
+
+    <label for="">Ingrediente 4: </label>
+    <select name="ingrediente4" id="">
+        <option value="Frango desfiado">Frango desfiado</option>
+        <option value="Bacon">Bacon</option>
+    </select><br>
+
+    <label for="">Borda Recheada: </label>
+    <select name="borda" id="">
+        <option value="Cheddar">Cheddar</option>
+        <option value="Catupiry">Catupiry</option>
+        <option value="Sem recheio">Sem recheio</option>
+    </select><br>
+
+    <label for="">Insira o endereço para recebimento: </label>
+    <input name="endereco" type="text">
+    <br>
+
+    <button type="submit">Confirmar pedido</button>
+</form>
+{% endblock %}
