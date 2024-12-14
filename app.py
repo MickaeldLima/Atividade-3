@@ -51,6 +51,7 @@ def confirmacao():
     ingrediente4 = request.form.get ('ingrediente4')
     borda = request.form.get ('borda')
     endereco = request.form.get ('endereco')
-    
+    with open ("./static/texts/pedidos.txt",'a') as pedidos:
+        pedidos.write(f" Pedido\n{massa}\n{molho}\n{ingrediente1}\n{ingrediente2}\n{ingrediente3}\n{ingrediente4}\n{borda}\n{endereco}")
 
     return render_template("confirmacao.html", massa = massa, molho = molho, ingrediente1 = ingrediente1, ingrediente2 = ingrediente2, ingrediente3 = ingrediente3, ingrediente4 = ingrediente4, borda = borda, endereco = endereco);
